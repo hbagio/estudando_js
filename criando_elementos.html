@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <script>
+    // executa function ao abrir a pagina
+    window.onload = function () {
+
+      // cria uma variável que recebe um nov elemento h1
+      var titulo_h1 = document.createElement("h1");
+      //  Criar um variável que recebe o texto que será demonstrado
+      // Comando documento.cretateTextNode() serve para atribuir um texto a um elemento
+      var titulo_h1_text = document.createTextNode("Bom dia Js!");
+      //Novo elemento h1 recebe um elemento filho que é texto
+      //appendChild sempre serve para adicionar um componente filho
+      titulo_h1.appendChild(titulo_h1_text);
+      // Neste caso o componente pai body recebe componente filho h1
+      document.body.appendChild(titulo_h1);
+
+      var paragrafo = document.createElement("p");
+      //  Criar um variável que recebe o texto que será demonstrado
+      // Comando documento.cretateTextNode() serve para atribuir um texto a um elemento
+      var paragrafo_text = document.createTextNode("Todo objeto localizado em um documento é um nó de algum tipo. Em um documento HTML, um objeto pode ser um nó de elemento, mas também um nó de texto ou atributo.!");
+      //Novo elemento h1 recebe um elemento filho que é texto
+      //appendChild sempre serve para adicionar um componente filho
+      paragrafo.appendChild(paragrafo_text);
+      // Neste caso o componente pai body recebe componente filho h1
+      document.body.appendChild(paragrafo);
+
+
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
