@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" style="text-align: center; margin-top: 100px;">
+        <h3>Informe número para saber se ele é par ou impar</h3>
+        <input type="number" id="numero" />
+        <input type="button" onclick="parOuImpar()" value="Calcular" />
+        <br><br>
+        <span id="resultado"></span>
+    </div>
+
+
+    <script>
+        var numero = document.getElementById('numero');
+        var resultado = document.getElementById('resultado');
+        var resultadoTexto = '';
+        
+
+        function parOuImpar() {
+
+            if (numero.value % 2 == 0) {
+                 resultadoTexto = 'Numero é Par';
+            } else {
+                 resultadoTexto = 'Numero é Impar';
+            }
+            
+            resultado.innerHTML = resultadoTexto;
+        }
+
+    </script>
+</body>
+
+</html>
